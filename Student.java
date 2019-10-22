@@ -104,9 +104,7 @@ public class Student {
             while(!(verify)){
                 System.out.println("Invalid entry! Try again!");
                 sstate=JOptionPane.showInputDialog("\nEnter State capitalized:");
-//                System.out.println("Enter State:");
-//                Scanner inputState = new Scanner(System.in);
-//                state = inputState.nextLine().toUpperCase();
+
                 verify=Arrays.stream(stateArray).anyMatch(sstate::equals);
             }
             break;
